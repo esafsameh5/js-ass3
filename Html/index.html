@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmarker</title>
+
+  <link href="../bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+  <div class="container text-center">
+    <h2>Bookmarker</h2>
+    <div class="p-4 mt-4">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="BookmarkName" placeholder="Bookmark Name">
+        <label for="BookmarkName">Bookmark Name</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="BookmarkURL" placeholder="Website URL">
+        <label for="BookmarkURL">Website URL</label>
+      </div>
+
+      <button class="btn btn-success me-2 px-4" onclick="addBookmark()">Add</button>
+      <button class="btn btn-secondary px-4" onclick="clearInputs()">Clear</button>
+    </div>
+
+    <div class="mt-5">
+      <table class="table table-bordered table-striped align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th>Bookmark Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="displayBookmarks"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="../JavaScript/main.js"></script>
+</body>
+</html>
